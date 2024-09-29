@@ -17,7 +17,7 @@ const getDonarsListController = async (req, res) => {
     console.log(error);
     return res.status(500).send({
       success: false,
-      message: "Error In DOnar List API",
+      message: "Error In Donar List API",
       error,
     });
   }
@@ -32,7 +32,7 @@ const getHospitalListController = async (req, res) => {
     return res.status(200).send({
       success: true,
       Toatlcount: hospitalData.length,
-      message: "HOSPITAL List Fetched Successfully",
+      message: "Hospital List Fetched Successfully",
       hospitalData,
     });
   } catch (error) {

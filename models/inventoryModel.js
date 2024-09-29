@@ -4,7 +4,7 @@ const inventorySchema = new mongoose.Schema(
   {
     inventoryType: {
       type: String,
-      required: [true, "inventory type require"],
+      required: [true, "inventory type required"],
       enum: ["in", "out"],
     },
     bloodGroup: {
@@ -23,7 +23,7 @@ const inventorySchema = new mongoose.Schema(
     organisation: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
-      required: [true, "organisation is require"],
+      required: [true, "organisation is required"],
     },
     hospital: {
       type: mongoose.Schema.Types.ObjectId,
