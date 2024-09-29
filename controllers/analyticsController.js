@@ -5,7 +5,7 @@ const bloodGroupDetailsContoller = async (req, res) => {
   try {
     const bloodGroups = ["O+", "O-", "AB+", "AB-", "A+", "A-", "B+", "B-"];
     const bloodGroupData = [];
-    const organisation = new mongoose.Types.ObjectId(req.body.userId);
+    const organisation = new mongoose.Types.ObjectId(req.userId);
     //get single blood group
     await Promise.all(
       bloodGroups.map(async (bloodGroup) => {
