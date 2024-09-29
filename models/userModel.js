@@ -52,7 +52,7 @@ const userSchema = new mongoose.Schema(
     },
     phone: {
       type: String,
-      required: [true, "phone number is required"],
+      required: [true, "phone numbe is required"],
     },
   },
   { timestamps: true }

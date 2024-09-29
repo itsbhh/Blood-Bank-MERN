@@ -10,11 +10,10 @@ module.exports = async (req, res, next) => {
           message: "Auth Failed",
         });
       } else {
-        req.userId = decode.userId; // Assign to req object directly
+        req.body.userId = decode.userId;
         next();
       }
     });
-    
   } catch (error) {
     console.log(error);
     return res.status(401).send({
